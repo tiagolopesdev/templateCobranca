@@ -89,6 +89,7 @@
         height: 5px;
         width: 100%;
         margin: 6px auto;
+        transition-duration: 0.3s;
     }
 
     .menuToggle {
@@ -96,6 +97,40 @@
         height: 30px;
         margin-right: 20px;
     }    
+
+    .menuSection.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        z-index: 10;
+    }
+
+    .bottons {
+        display: block;
+    }
+
+    .menuSection.on .menuToggle {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+
+    .menuSection.on .menuToggle .one {
+        transform: rotate(45deg) translate(6px, 8px)
+    }
+
+    .menuSection.on .menuToggle .two {
+        opacity: 0;
+    }
+
+    .menuSection.on .menuToggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    
 }
 
 @media (max-width: 540px) {
