@@ -1,5 +1,5 @@
 .navbar {
-    padding-top: 2.5rem;
+    /*  padding-top: 2.5rem; */
 }
 
 .priceTypeTitle {
@@ -19,7 +19,6 @@
 .titulos {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
 }
 
 .actionsTitles {
@@ -43,10 +42,13 @@
 .search {
     display: flex;
     justify-content: center;
+    margin-top: 155px;
+    margin-bottom: 20px;
 }
 
 #campoSearch {
     border-radius: 20px;
+    width: 400px;
 }
 
 #inputSearch {
@@ -57,26 +59,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    left: 82px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 156px;
+    margin: 10px;    
 }
 
 .statusFinancia {
     display: flex;
     justify-content: center;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
-@media (max-width: 540px) {
+@media (max-width: 688px) {
+
+    #campoSearch {
+        border-radius: 20px;
+        width: 300px;
+    }
+
     .bottons {
         margin-top: 50px;
-        display: grid;
+        display: none;
         padding-left: 100px;
         padding-top: 156px;
     }
 
+    .one,
+    .two,
+    .three {
+        background-color: #FFFFFF;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menuToggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }    
+}
+
+@media (max-width: 540px) {
     .statusFinancia {
         display: flex;
         justify-content: center;
@@ -90,17 +112,20 @@
 }
 
 #addTitulo {
+    margin-right: 20px;
     border-radius: 30px;
     display: block;
     justify-content: left;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    color: blue;
 }
 
 #formaPagamento {
     border-radius: 30px;
     display: flex;
     justify-content: right;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    color: blue;
 }
 
 .card {
