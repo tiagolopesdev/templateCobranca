@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Gerencia financeira</span>
+    </div>
+  </nav>
+  <div class="statusFinancia">
+    <div class="card">
+      <div class="card-body">
+        <div class="receitas">
+          <div>
+            <p class="card-text">Receitas</p>
+            <h4 class="card-title">0000000000</h4>
+          </div>
+          <div class="indicativoReceita">
+            <img src="img/IndicativoReceita.svg">
+          </div>
+        </div>
+        <div class="despesas">
+          <div class="indicativoDespesa">
+            <img src="img/indicativoDespesa.svg">
+          </div>
+          <div>
+            <p class="card-text" id="titleDespesa">Despesas</p>
+            <h4 class="card-title">0000000000</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottons">
+    <button class="btn btn-primary" id="addTitulo" type="submit">Adicionar títulos</button>
+    <button class="btn btn-secondary" id="formaPagamento" type="submit">Formas de pagamento</button>
+  </div>
+  <div class="search">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" id="campoSearch" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" id="inputSearch" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="titulos">
+    <div class="card">
+      <div class="card-body">
+        <div class="textsTitles">
+          <h5 class="card-title" id="titleCard">Card title dskdjk jdksj lwnonfa s dksk sdlkslskldksldkl dsldksl djsk
+          </h5>
+          <div>
+            <p>00/00/0000</p>
+            <span class="badge bg-success">Status</span>
+            <span class="badge bg-secondary">Forma de pagamento</span>
+          </div>
+        </div>
+        <div class="priceTypeTitle">
+          <h2 id="price">R$00,00</h2>
+          <p class="badge bg-secondary">testTypeTitle</p>
+        </div>
+        <div class="actionsTitles">
+          <button type="button" class="btn btn-primary">Editar</button>
+          <button type="button" class="btn btn-outline-danger">Remover</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
