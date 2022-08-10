@@ -68,6 +68,10 @@
     /* margin-top: -30px; */
 }
 
+.opcoes {
+    display: none;
+}
+
 @media (max-width: 688px) {
 
     #campoSearch {
@@ -106,6 +110,9 @@
         height: 100vh;
         background-color: blue;
         z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .menuSection.on .menuToggle {
@@ -126,9 +133,32 @@
         transform: rotate(-45deg) translate(8px, -9px);
     }
 
-    .menuSection.on .bottons {
+    /* .menuSection.on .bottons {
         text-align: center;
         display: inline-grid;        
+    } */
+    .opcoes {
+        display: block;
+        text-align: center;        
+    }
+
+    .opcoes li {
+        list-style: none;
+    }
+    
+    .opcoes li .links {
+        text-transform: uppercase;
+        transition-duration: 0.5s;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        display: inline;
+        transition: all 250ms linear 0s;
+    }
+    
+    .opcoes li .links:active {
+        transform: scale(0.98);
     }
 
     .menuSection.on .bottons #addTitulo {
@@ -161,7 +191,7 @@
     display: block;
     justify-content: left;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    color: blue;
+    color: rgb(35, 132, 223);
 }
 
 #formaPagamento {
@@ -169,7 +199,7 @@
     display: flex;
     justify-content: right;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-    color: blue;
+    color: rgb(35, 132, 223);
 }
 
 .card {
