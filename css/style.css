@@ -74,10 +74,10 @@
 
 @media (max-width: 688px) {
 
-    #campoSearch {
+    /* #campoSearch {
         border-radius: 20px;
         width: 300px;
-    }
+    } */
 
     .bottons {
         margin-top: 50px;
@@ -133,10 +133,6 @@
         transform: rotate(-45deg) translate(8px, -9px);
     }
 
-    /* .menuSection.on .bottons {
-        text-align: center;
-        display: inline-grid;        
-    } */
     .opcoes {
         display: block;
         text-align: center;        
@@ -225,6 +221,15 @@
         display: inline;
         justify-content: center;
         gap: 10px;
+    }
+
+    .search {
+        margin-top: 210px;
+        
+    }
+    #campoSearch {
+        border-radius: 20px;
+        width: 280px;
     }
 }
 
