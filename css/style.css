@@ -60,12 +60,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px;
+    gap: 20px;
 }
 
 .statusFinancia {
     display: flex;
     justify-content: center;
-    /* margin-top: -30px; */
 }
 
 .opcoes {
@@ -100,7 +100,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: blue;
+        background-color: #0d6efd;
         z-index: 10;
         display: flex;
         justify-content: center;
@@ -125,15 +125,10 @@
         transform: rotate(-45deg) translate(8px, -9px);
     }
 
-    .menuSection.on .bottons #addTitulo {
-        margin-right: 0px;
-        border-radius: 30px;
-        display: block;
-        justify-content: left;
-        box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-        color: blue;
+    .menuSection.on .bottons {
+        display: grid;
+        gap: 20px;
     }
-
 }
 
 @media (max-width: 540px) {
@@ -150,7 +145,6 @@
 }
 
 #addTitulo {
-    margin-right: 20px;
     border-radius: 30px;
     display: block;
     justify-content: left;
