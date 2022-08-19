@@ -231,6 +231,20 @@
         border-radius: 20px;
         width: 280px;
     }
+    .priceTypeTitle {
+        margin-left: 30px;
+        display: grid;
+        justify-items: end;
+    }
+    .actionsTitles {
+        display: flex;
+        gap: inherit;
+    }
+    .actionsTitles button{
+        width: 150px;
+        gap: 20px;
+    }
+
 }
 
 .despesas {
