@@ -151,14 +151,15 @@
         gap: 20px;
     }
 
-    .menuSection.on .bottons .btn {        
+    .menuSection.on .bottons .btn {  
+        font-weight: 600;           
+        text-align: center;                
+        align-content: space-around;      
         border-radius: 30px;
-        display: block;
-        justify-content: left;
         box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
         color: rgb(35, 132, 223);
         width: 300px;
-        font-size: 20pt;
+        font-size: 16pt;
         text-transform: uppercase;
     }    
 }
@@ -187,7 +188,7 @@
 #formaPagamento {
     border-radius: 30px;
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     color: rgb(35, 132, 223);
 }
