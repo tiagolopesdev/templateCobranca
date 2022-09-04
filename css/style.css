@@ -68,7 +68,27 @@
     display: none;
 }
 
+.navbar {
+    height: 86px;
+}
+
+.boxSearch {
+    width: 25px;
+}
+
+.searchHamburguer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 @media (max-width: 688px) {
+
+    .searchHamburguer {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 
     .bottons {
         display: none;
@@ -81,13 +101,14 @@
         height: 5px;
         width: 100%;
         margin: 6px auto;
+        border-radius: 50px;
         transition-duration: 0.3s;
     }
 
     .menuToggle {
         width: 40px;
         height: 30px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     .menuSection.on {
@@ -125,6 +146,17 @@
         display: grid;
         gap: 20px;
     }
+
+    .menuSection.on .bottons .btn {        
+        border-radius: 30px;
+        display: block;
+        justify-content: left;
+        box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+        color: rgb(35, 132, 223);
+        width: 300px;
+        font-size: 20pt;
+        text-transform: uppercase;
+    }    
 }
 
 @media (max-width: 540px) {
@@ -175,15 +207,15 @@
 }
 
 @media (max-width: 460px) {
+
     .card-body {
-        display: inline;
+        display: flex;
         justify-content: center;
         gap: 10px;
     }
 
     .search {
-        margin-top: 210px;
-        
+        margin-top: 210px;        
     }
     #campoSearch {
         border-radius: 20px;
@@ -218,12 +250,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-}
-
-#titleDespesa {
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
 }
 
 .receitas {

@@ -13,37 +13,42 @@
   <nav class="navbar navbar-dark bg-primary">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">Financias</span>
-      <div class="menuSection">
-        <div class="menuToggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div> 
-        <div class="bottons">        
-          <button class="btn btn-light" id="addTitulo" type="submit">Adicionar títulos</button>
-          <button class="btn btn-light" id="formaPagamento" type="submit">Formas de pagamento</button>
-        </div>                      
-      </div>            
+      <div class="searchHamburguer">
+        <div class="boxSearch">
+          <img src="img/Search.svg" alt="" srcset="">
+        </div>
+        <div class="menuSection">        
+          <div class="menuToggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div> 
+          <div class="bottons">        
+            <button class="btn btn-light" id="addTitulo" type="submit">Adicionar títulos</button>
+            <button class="btn btn-light" id="formaPagamento" type="submit">Formas de pagamento</button>
+          </div>                      
+        </div>
+      </div>                  
     </div>
   </nav>
   <div class="statusFinancia">
     <div class="card">
       <div class="card-body">
         <div class="receitas">
-          <div>
+          <div class="textAndIndicativo">
             <p class="card-text">Receitas</p>
-            <h4 class="card-title">0000000000</h4>
+            <div class="indicativoReceita">
+              <img src="img/IndicativoReceita.svg">
+            </div>            
           </div>
-          <div class="indicativoReceita">
-            <img src="img/IndicativoReceita.svg">
-          </div>
+          <h4 class="card-title">0000000000</h4>
         </div>
         <div class="despesas">
           <div class="indicativoDespesa">
             <img src="img/indicativoDespesa.svg">
           </div>
           <div>
-            <p class="card-text" id="titleDespesa">Despesas</p>
+            <p class="card-text">Despesas</p>
             <h4 class="card-title">0000000000</h4>
           </div>
         </div>
@@ -55,7 +60,7 @@
       <input class="form-control me-2" id="campoSearch" type="search" placeholder="Search" aria-label="Search">      
     </form>
   </div>
-  <div class="titulos">    
+  <!-- <div class="titulos">    
     <div class="card" id="cardTitulo">
       <div class="card-body">
         <div class="textsTitles">
@@ -77,7 +82,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>   -->
 
   <script src="js/teste.js"></script>
 </body>
