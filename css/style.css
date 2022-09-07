@@ -44,7 +44,7 @@
 
 #campoSearch {
     border-radius: 20px;
-    width: 400px;
+    /* width: 400px; */
 }
 
 #inputSearch {
@@ -82,7 +82,28 @@
     gap: 30px;
 }
 
+.searchNav {
+    display: none;
+}
+
+.searchNav.on {    
+    display: flex;
+}
+
+.nameApplication.off {
+    display: none;
+}
+
+.searchNav.on input {    
+    border-radius: 50px;
+    min-width: 250px;
+}
+
 @media (max-width: 688px) {
+
+    #formSearchTitle {
+        min-width: 70px;
+    }
 
     .receitas {
         display: block;
@@ -246,6 +267,13 @@
         gap: 20px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .searchNav input {
+        border-radius: 50px;
+        min-width: 200px;
+    }
 }
 
 .indicativoDespesa {
